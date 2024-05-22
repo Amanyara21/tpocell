@@ -30,7 +30,7 @@ export const Footer = () => {
                             &nbsp;<a href="mailto:tpouiet@kuk.ac.in">tpouiet@kuk.ac.in</a>
                         </div>
                     </div>
-                    <div className="rightHandles" style={{ "textAlign": "center" }}>
+                    {/* <div className="rightHandles" style={{ "textAlign": "center" }}>
                         <h5 className="foot-title">Follow Us</h5>
                         <ul className="social-media mb-8">
                             <li>
@@ -69,7 +69,7 @@ export const Footer = () => {
                                 <p className="tdn1">&#128279;</p> Samarjeet Singh
                             </h6>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
                 <br />
                 <br />
