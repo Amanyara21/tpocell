@@ -1,15 +1,17 @@
-"use client"
+"use client";
 import React from 'react';
 
 function Navigation() {
   const uncheck = () => {
-    console.log("clicked");
-  }
+    const checkbox = document.getElementById('navi-toggle');
+    checkbox.checked = false;
+  };
+
   return (
     <div className="navigation">
       <input type="checkbox" className="navigation__checkbox hidden" id="navi-toggle" />
 
-      <label htmlFor="navi-toggle" className="navigation__button" >
+      <label htmlFor="navi-toggle" className="navigation__button" onClick={uncheck}>
         <span className="navigation__icon">&nbsp;</span>
       </label>
 
@@ -30,6 +32,3 @@ function Navigation() {
 }
 
 export default Navigation;
-
-
-
