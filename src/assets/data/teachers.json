@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Mr. Archit Sharma",
+    "department": "Dept. of Biotechnology",
+    "email": "archit.sharma786@gmail.com",
+    "photo": "img/archit_sir.jpg"
+  },
+  {
+    "name": "Ms. Saumya Goyal",
+    "department": "Dept. of Computer Engg.",
+    "email": "goyalsaumya4@gmail.com",
+    "photo": "img/Saumya-mam-768x1024.jpg"
+  },
+  {
+    "name": "Ms. Pragya Chandi",
+    "department": "Dept. of Computer Engg.",
+    "email": "pragya.cse.uiet@kuk.ac.in",
+    "photo": "img/pragya_mam.jpg"
+  },
+  {
+    "name": "Ms. Shikha Chaudhry",
+    "department": "Dept. of Computer Engg.",
+    "email": "shikhachaudhry107@gmail.com",
+    "photo": "img/shikha_cse.jpg"
+  },
+  {
+    "name": "Mr. Krishan Gopal",
+    "department": "Dept. of Electronics & Communications",
+    "email": "kgopal2015@kuk.ac.in",
+    "photo": "img/krishan.jpg"
+  },
+  {
+    "name": "Mr. Krishna Pandey",
+    "department": "Dept. of Electronics & Communications",
+    "email": "kp7636@gmail.com",
+    "photo": "img/kp.jpg"
+  },
+  {
+    "name": "Mr. Upender Dhull",
+    "department": "Dept. of Mechanical Engg.",
+    "email": "udhull2015@kuk.ac.in",
+    "photo": "img/upenderNew.jpg"
+  },
+  {
+    "name": "Mr. Vikas kumar",
+    "department": "Dept. of Mechanical Engg.",
+    "email": "nirmaldhotia@gmail.com",
+    "photo": "img/san.jpg"
+  }
+]
