@@ -6,13 +6,10 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles.css';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 
 const PlacementManagement = () => {
-  const router = useRouter();
   const searchParams = useSearchParams();
-
-
 
   const [students, setStudents] = useState([]);
   const [user, setUser] = useState(null);
@@ -20,7 +17,7 @@ const PlacementManagement = () => {
 
   useEffect(() => {
     const fetchStudents = async () => {
-      console.log("calling Fetch");
+      console.log(queryParams);
       try {
         const response = await axios.get(`/api/placements?${queryParams}`);
         setStudents(response.data);
@@ -31,19 +28,19 @@ const PlacementManagement = () => {
     fetchStudents();
   }, [queryParams])
 
-  useEffect(() => {
-    const fetchUsers = async () => {
-      console.log("calling Fetch");
-      try {
-        const response = await axios.post(`/api/getuser`);
-        console.log(response);
-        setUser(response.data);
-      } catch (error) {
-        console.error('Error fetching students:', error);
-      }
-    };
-    fetchUsers();
-  }, [])
+  // useEffect(() => {
+  //   const fetchUsers = async () => {
+  //     console.log("calling Fetch");
+  //     try {
+  //       const response = await axios.post(`/api/getuser`);
+  //       console.log(response);
+  //       setUser(response.data);
+  //     } catch (error) {
+  //       console.error('Error fetching students:', error);
+  //     }
+  //   };
+  //   fetchUsers();
+  // }, [])
   return (
     <div className="mx-auto">
       <NavbarPlacement />

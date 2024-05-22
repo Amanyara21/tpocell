@@ -20,7 +20,9 @@ function Carousel() {
 
     return (
         <section >
-            <h2 className="heading-primary--main white-head">Our Cell at a Glance</h2>
+        <div className="">
+            <h2 className='heading-primary--main  white-head text-center py-4'>Our Cell at a Glance</h2>
+        </div>
             <Slider {...settings} className="carousel-container" id="carousel">
                 <div className="mySlides animate">
                     <img src="img/header_photo.jpg" alt="slide"/>

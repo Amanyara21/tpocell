@@ -296,6 +296,7 @@ body {
 .heading-primary--main {
   color: #000000;
   display: block;
+  width: fit-content;
   font-size: 4rem;
   font-weight: 800;
   letter-spacing: 0.5rem;
@@ -2435,9 +2436,9 @@ hr {
 }
 
 
-.shadowBtn{
+/* .shadowBtn{
   box-shadow: 0px 0px 10px 10px #a6720b;
-}
+} */
 
 .marquee{
   width: 100%!important;
