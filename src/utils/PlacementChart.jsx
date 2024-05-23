@@ -24,11 +24,11 @@ const PlacementChart = ({ department, year, onClose }) => {
 
 
     const options = {
-        width: 400,
+        width: 300,
         height: 300,
         chartArea: {  
-            height: "85%",
-            width: "88%"
+            height: "90%",
+            width: "100%"
         },
         legend: { position: 'bottom'},
     };
