@@ -462,9 +462,9 @@ body {
   height: 500px;
 }
 
-@media only screen and (max-width: 32.5em) {
+@media only screen and (max-width: 475px) {
   .popup-container {
-    width: 333px;
+    width: 100%;
     margin: 0.3em auto;
     /* height: auto; */
   }
@@ -1525,7 +1525,6 @@ body {
 
 .ne-nutrition-distribution {
   position: relative;
-  padding-bottom: 99.99%;
   height: fit-content;
   overflow: hidden;
 }
