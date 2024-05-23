@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export async function POST(req) {
     const userId = req.headers.get('x-user-id');
-
+    console.log(userId);
     if (userId) {
         console.log(`Authenticated user ID: ${userId}`);
         return NextResponse.json({ message: 'Success!', userId }, { status: 200 });

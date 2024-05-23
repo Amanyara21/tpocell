@@ -11,7 +11,7 @@ function Navigation() {
     <div className="navigation">
       <input type="checkbox" className="navigation__checkbox hidden" id="navi-toggle" />
 
-      <label htmlFor="navi-toggle" className="navigation__button" onClick={uncheck}>
+      <label htmlFor="navi-toggle" className="navigation__button">
         <span className="navigation__icon">&nbsp;</span>
       </label>
 

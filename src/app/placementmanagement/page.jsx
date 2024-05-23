@@ -12,35 +12,41 @@ const PlacementManagement = () => {
   const searchParams = useSearchParams();
 
   const [students, setStudents] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [user, setUser] = useState(null);
   const queryParams = searchParams.toString();
 
   useEffect(() => {
     const fetchStudents = async () => {
-      console.log(queryParams);
+      setLoading(true)
       try {
         const response = await axios.get(`/api/placements?${queryParams}`);
         setStudents(response.data);
       } catch (error) {
         console.error('Error fetching students:', error);
+      }finally{
+        setLoading(false)
       }
     };
     fetchStudents();
   }, [queryParams])
 
-  // useEffect(() => {
-  //   const fetchUsers = async () => {
-  //     console.log("calling Fetch");
-  //     try {
-  //       const response = await axios.post(`/api/getuser`);
-  //       console.log(response);
-  //       setUser(response.data);
-  //     } catch (error) {
-  //       console.error('Error fetching students:', error);
-  //     }
-  //   };
-  //   fetchUsers();
-  // }, [])
+  useEffect(() => {
+    setLoading(true)
+    console.log(loading);
+    const fetchUsers = async () => {
+      try {
+        const response = await axios.post(`/api/getuser`);
+        console.log(response);
+        setUser(response.data);
+      } catch (error) {
+        console.error('Error fetching students:', error);
+      }finally{
+        setLoading(false)
+      }
+    };
+    fetchUsers();
+  }, [])
   return (
     <div className="mx-auto">
       <NavbarPlacement />
@@ -52,7 +58,7 @@ const PlacementManagement = () => {
           </Link>
         </div>
       )}
-      <StudentsDetail students={students} />
+      <StudentsDetail students={students} loading={loading} />
     </div>
   );
 };

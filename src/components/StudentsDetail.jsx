@@ -1,10 +1,15 @@
-const Students = ({ students }) => {
+import Loading from "@/app/loading";
+
+const Students = ({ students, loading }) => {
+  if(loading){
+    return <Loading></Loading>
+  }
   return (
     <>
     {students && students.length>0 ?(<div className="flex  flex-wrap gap-4 px-4 py-8 justify-center" id="students">
       {students.map((student) => (
         <div key={student._id} className="max-w-sm w-full bg-white border border-gray-400 rounded-lg">
-          <div className="   p-4 flex flex-col justify-between leading-normal">
+          <div className="p-4 flex flex-col justify-between leading-normal">
             <div className="mb-8">
               <div className="text-gold font-bold text-3xl mb-2">{student.name}</div>
               <p className="text-black text-xl">Branch: {student.department}</p>
